@@ -23,7 +23,7 @@ window.newAccount = (email, password) => {
         "info"
       ).then(() => {
         signOutUser();
-        location.href = "../index.html";
+        location.href = "../";
       });
     })
     .catch(error => {
