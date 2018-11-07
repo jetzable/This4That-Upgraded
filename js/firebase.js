@@ -63,7 +63,7 @@ window.loginUser = (email, password) => {
     .auth()
     .signInWithEmailAndPassword(email, password)
     .then(() => {
-      location.href = "/views/dashboard.html";
+      location.href = "views/dashboard.html";
     })
     .catch(error => {
       // Handle Errors here.
