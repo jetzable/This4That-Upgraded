@@ -18,8 +18,6 @@ firebase.auth().onAuthStateChanged(user => {
 
     // ...
   } else {
-    swal("Ooopss!", "Please Sign In.", "error").then(() => {
-      location.href = "../index.html";
-    });
+    location.href = "../";
   }
 });
