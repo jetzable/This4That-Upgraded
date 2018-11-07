@@ -13,7 +13,7 @@ En este repositorio se decide retomar el proyecto para una continua mejora y una
 
 Se retoma la idea incial del proyecto y se le adicionan tecnologías como Firebase y los servicios que esta ofrece.
 
-[Live Demo]()
+[Live Demo](https://jetzable.github.io/This4That-Upgraded/index.html)
 
 Al ingresar en la liga anterior, tendrás la posibilidad de iniciar sesión con la siguiente info:
 
