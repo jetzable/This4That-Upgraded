@@ -25,6 +25,7 @@ firebase.auth().onAuthStateChanged(user => {
             if (email === userEmail) {
               displayName = user.data().userName;
               photoURL = user.data().profilePhoto;
+              localStorage.setItem("city", user.data().city);
               localStorage.setItem("userName", displayName);
               localStorage.setItem("userPhoto", photoURL);
             }
@@ -42,11 +43,11 @@ firebase.auth().onAuthStateChanged(user => {
   }
 });
 
-const userName = localStorage.getItem("userName");
-const userEmail = localStorage.getItem("userEmail");
-const profilePhoto = localStorage.getItem("userPhoto");
-
 document.getElementById("logOutBtn").addEventListener("click", event => {
   event.preventDefault();
+  localStorage.setItem("userName", "");
+  localStorage.setItem("userEmail", "");
+  localStorage.setItem("userPoto", "");
+  localStorage.setItem("city", "");
   signOutUser();
 });

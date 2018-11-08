@@ -1,3 +1,13 @@
+#profilePhoto {
+  width: 250px;
+  height: 250px;
+}
+
+.card {
+  background: transparent;
+  border: 0;
+}
+
 body {
   font-size: larger;
   color: aliceblue;

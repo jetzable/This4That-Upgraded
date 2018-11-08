@@ -167,7 +167,9 @@ window.createUserProfileWithEmail = (name, email, location, image, ref) => {
           userEmail: email,
           city: location,
           trades: [],
-          profilePhoto: photoUrlId
+          profilePhoto: photoUrlId,
+          aboutMe: "",
+          offers: []
         })
         .then(docRef => {
           console.log("Document written with ID: ", docRef.id);
